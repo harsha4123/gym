@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+img{
+    width: 100%;
+}
+.div{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+body{
+    background-color: #936cff;
+    color: aliceblue    ;
+}
+nav{
+    background-color: aliceblue;
+}
+nav h4{
+    color:rgb(0, 0, 0);
+}
+/* mobile Quries-Mobile 1st approach */
+@media (min-width:300px){
+    nav img{
+        height: 6vh;
+        width: auto;
+        margin-right: 0.8rem;
+        
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    nav h4{
+        color:rgb(0, 0, 0);
+        font-weight: bolder;
+    }
+    .one h3,p{
+        text-align: center;
+        padding: 1.5vh 0;
+    }
+    .one h3{
+        margin-top: 5vh;
+    }
+    .one img{
+        margin-top: 1vh;
+    }
+    .two{
+        background-color: rgb(255, 255, 255);
+        padding: 1.5rem;
+        margin: 3vh auto;
+        width: 70%;
+        border-radius: 12px;
+        color: black;
+    }
+    .two label{
+        color: black;
+        font-size: 1.1rem; 
+    }
+    .two input[type="text"]{
+        border: none;
+        padding: 0.8rem;
+        outline: none;
+        border-bottom: 1px solid black;
+        font-size: 1.2rem;
+         width: 90%;
+    }
+   
+    .two input[type="radio"], input[type="checkbox"]{
+        margin-right: 1rem;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    .checkbox{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+    }
+    #fm{
+        margin: 0.5rem;
+    }
+    .button{
+        background-color: black;
+        color: white;
+        width: 90%;
+        padding: 0.9rem;
+        border-radius: 12px;
+        margin-top: 3vh;
+        border: none;
+        outline: none;
+        font-weight: bold;
+    }
+    .equiments{
+        align-items: center;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .equiments h4{
+        margin-bottom: 2rem;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        background-color: aliceblue;
+        border-radius: 12px;
+        padding: 2rem;
+        margin: 1.5rem;
+    }
+    .har{
+        background-color: white;
+        color: black;
+        
+    }
+    .har h4{
+        margin-top: 1.2rem;
+        padding: 1rem;
+    }
+    .segmentA{
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .segmentA h4 {
+            font-weight: bolder;
+            font-size: 1.5rem;
+            
+            
+    }
+    .segmentA img{
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width:700px){
+    .segments{
+        display: flex;
+        
+    }
+    .har{
+        width: 70%
+        
+    }   
+    .segmentA h4{
+        margin-top: 1.2rem;
+        padding: 1rem;
+    }
+}
+@media (min-width:900px){
+    nav{
+        justify-content: left;
+        padding-left: 10vw;
+    }
+    .one h3,p{
+        display: none;
+    }
+    .hero{
+        padding-top: 10vh;
+        display: flex;
+        flex-direction:row-reverse;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .two .label{
+        font-size: 0.7rem;
+    }
+    .two .label, input[type=text]{
+        font-size: 0.7rem;
+    }
+    .two form{
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .two{
+        padding: 2rem;
+    }
+    .two .button{
+        width: 100%;
+
+    }
+    .equiments h4{
+        font-size: 1rem;
+        margin-top: 8vh;
+    }
+    .cards{
+        grid-template-columns:repeat(4 ,1fr) ;
+    }
+    .segmentA img{
+        width: 50%;
+    }
+}
